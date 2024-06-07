@@ -1,5 +1,7 @@
 const path = require('path');
 
+console.log('process.env.NODE_ENV', process.env.NODE_ENV);
+
 module.exports = {
   //编译的输入位置,是在项目目录下的src目录下的index.jsx,如果你使用纯js编写,那这个文件名当然就是index.js
   entry: './src/index.jsx',
@@ -40,6 +42,6 @@ module.exports = {
   },
   //要排除哪些模块不打包呢?这个参数我不是很清楚,但是学来的时候就这样的,具体因为时间的原因我也没有测试.
   externals: {
-    // react: 'commonjs react',
+    // react: 'react',
   },
 };
